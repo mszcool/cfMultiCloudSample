@@ -33,6 +33,7 @@ cf create-domain $pivotalOrg $trafficMgrDomain
 cf create-route $pivotalSpace $trafficMgrDomain
 cf map-route multicloudapp $trafficMgrDomain
 cf set-env multicloudapp REGION "Pivotal Cloud"
+cf restage multicloudapp
 
 echo ""
 echo "### Azure setup ###"
@@ -43,6 +44,7 @@ cf create-domain $azureOrg $trafficMgrDomain
 cf create-route $azureSpace $trafficMgrDomain
 cf map-route multicloudapp $trafficMgrDomain
 cf set-env multicloudapp REGION "Microsoft Azure"
+cf restage multicloudapp
 
 echo ""
 echo "### Finished ###"

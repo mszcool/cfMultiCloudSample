@@ -11,7 +11,7 @@ class Web < Sinatra::Base
     addr = ENV.fetch("CF_INSTANCE_ADDR", "127.0.0.1")
 
     %{
-      <h1>I am running in #{REGION}</h1>
+      <h1>I am running in #{region}</h1>
       <hr />
       <h2>I am app instance #{instance}</h2>
       <h2>I am running at #{addr}</h2>
