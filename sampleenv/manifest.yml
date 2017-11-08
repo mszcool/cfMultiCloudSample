@@ -1,0 +1,7 @@
+name: sampleenvironmentapp
+memory: 1536M
+disk_quota: 2048M
+random-route: true
+env:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
